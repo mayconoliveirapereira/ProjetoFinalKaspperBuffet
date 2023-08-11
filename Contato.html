@@ -9,15 +9,15 @@
 <body>
 
     <!--inicio navbar-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary container-fluid">
+    <nav class="navbar col-12 position-fixed navbar-expand-lg bg-body-tertiary container-fluid" style="z-index: 999;">
       <div class="#">
         <a class="navbar-brand" href="#">
           <img src="./fotos/LogoKaspper'sBuffet2.jpg" alt="Logo" width="auto" height="80px" class="d-inline-block align-text-top">
         </a>
       </div>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
+            <ul class="navbar-nav container-fluid col-11 m-auto">
+              <li class="nav-item container">
                 <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
               </li>
               <li class="nav-item container">
@@ -41,10 +41,13 @@
               
             </ul>
           </div>
-        </div>
       </nav>
-
+<br>
+<br>
+<br>
+<br>
     <!--fim navbar-->
+
     <!--inicio formulário-->
       <h3 class="container">Cadastre sua data</h3>
 <form method="post" class= "container">
@@ -75,41 +78,34 @@
 <!--fim formulário-->
     <!--Inicio Grid, cards que estão em 1 row e 4 col-->
     <br>
-    <div class="container">
-        <div class="row">
-        <div class="col" style="background-color:#e6f3ed;"> 
-        <img src="./fotos/instagran.jpeg" width="150px" alt="...">
-        <img src="./fotos/facebook.jpeg" width="150px" alt="...">
-        <img src="./fotos/email.jpeg" width="150px" alt="...">
-        <img src="./fotos/whatsapp.jpeg" width="150px" alt="...">
-        </div>
+    <div class="row">
+    <div class="col">
+      <h2 class="text-center">Contatos</h2>
+        <div class="m-auto text-center" >
 
-        <div class="col" style="background-color: #e6f1ec;"> 
-        <img src="./fotos/googlemaps.jpeg" width="400px" alt="..." >
-        </div>
+        <a href="http://www.whatsapp.com">
+        <i class="fa-brands fa-whatsapp" style="font-size: 100px; color: green;"></i></a>
+        
+        <a href="http://www.hotmail.com">
+        <i class="fa-regular fa-envelope" style="font-size: 100px; color: rgb(55, 56, 55);"></i></a>
 
-        <div class="col" style="background-color: #e0ebe5;">
-            <form>
-                <div class="mb-50">
-                  <label class="form-label">Nome</label>
-                  <input type="email" class="form-control" placeholder="Digite o seu nome">
-                </div>
-          
-                <div class="mb-50">
-                  <label class="form-label">Email</label>
-                  <input type="text" class="form-control" placeholder="Digite seu endereço">
-                </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+        <a href="http://www.facebook.com">
+        <i class="fa-brands fa-facebook" style="font-size: 100px; color: rgb(28, 6, 80);"></i></a>
 
-        </div>
-        </div>
+        <a href="https://www.instagram.com/">
+        <i class="fa-brands fa-instagram" style="font-size: 100px; color: rgb(173, 48, 39);"></i></a>
+
+        
+        <div class="col m-auto text-center"> 
+          <a href="https://www.google.com.br/maps">
+          <img src="./fotos/googlemaps.jpeg" width="300px" alt="...">
+        </a></div>
+
+      </div>
     </div>
-    <br>
+    </div>
+<br>
+
     <!--inicio rodapé-->
     <div class="row">
       <div class="col text-center bg-light fw-bold">
@@ -123,5 +119,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-</body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </body>
 </html>
