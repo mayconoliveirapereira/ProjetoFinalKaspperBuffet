@@ -10,7 +10,7 @@ import com.buffet.backend.model.Cliente;
 public interface ClienteService {
 
 	//create cliente
-	public Cliente createUser(Cliente cliente);
+	public Cliente createCliente(Cliente cliente);
 	
 	
 	//read users - Listar
