@@ -49,33 +49,127 @@
     <!--fim navbar-->
 
     <!--inicio formulário-->
-      <h3 class="container">Cadastre sua data</h3>
-<form method="post" class= "container">
-    <div class="mb-3">
-      <label for="nome" class="form-label">Nome</label>
-      <input type="text" class="form-control" id="nome" name="nome">
+
+<div class="input-box" style="padding-left: 30px; padding-right: 30px;">
+  <div class="card-header py-3">
+      
+      <h5 class= "text-center"  style="color:black;">Solicitar Orçamento </h5>
     </div>
-    <div class="mb-3">
-      <label for="email" class="form-label">Email</label>
-      <input type="text" class="form-control" id="email" name="email">
+    <form method="post" class= "container-fluid">
+<!--Nome Completo-->
+
+  <div class="row mb-3">
+      <div class="col">
+          <div class="mb-3">
+          <label for="firstname" class="form-label">Nome</label>
+           <input type="text" class="form-control" id="firstname" placeholder="Digite seu Nome" required>
+           </div>
       </div>
-     <div class="mb-3">
-      <label for="Contato" class="form-label">Contato</label>
-      <input type="text" class="form-control" id="contato" name="contato">
+  </div>
+
+<!-- Inicio Contatos e E-mail -->
+<div class="row mb-4">
+  <div class="col">
+    <div class="form-outline">
+      <label class="form-label" for="form7Example1">Celular</label>
+      <input type="tel" id="form7Example1" class="form-control" required placeholder="(xx) xxxxx-xxxx"/>       
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="form-outline">
+      <label class="form-label" for="form7Example2">E-mail</label>
+      <input type="email" id="form7Example2" class="form-control" required placeholder="Digite seu email" />                
+    </div>
+  </div>
+</div>
+<br>
+<!-- Final -->
+
+<!-- Informações do Evento -->
+<div class="row mb-4">
+  <div class="col">
+    <div class="form-outline">
+      <label class="form-label" for="form7Example1">Data do Evento</label>
+      <input type="date" id="form7Example1" class="form-control" required placeholder="DD/MM/AAAA"/>       
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="form-outline">
+      <label class="form-label" for="form7Example2">Quantidade de Convidados</label>
+      <input type="number" id="form7Example2" class="form-control" required placeholder="Quantidade" />                
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="row mb-4">
+  <div class="col"> 
+      <div class="form-outline">    
+      Tipo de Evento: <br>
+      <select name="opcao">
+       <option value="opcao"> Opção </option>
+       <option value="casamento"> Casamento </option>
+       <option value="bodas"> Bodas </option>
+       <option value="aniversario"> Aniversário </option>
+       <option value="debutante"> Debudante (15 anos) </option>    
+       <option value="corporativo"> Corporativo </option>                  
+      </select>   
+      </div>      
+  </div><br>
+
+ 
+  <div class="col">
+      <div class="form-outline">
+          O Evento será realizado: <br>
+          <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Casa">
+          <label class="form-check-label" for="inlineRadio1">Casa</label>
+          </div>
+          <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Salao">
+          <label class="form-check-label" for="inlineRadio2">Salão de Festas</label>
+          </div>
+          <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Empresa">
+          <label class="form-check-label" for="inlineRadio2">Empresa</label>
+          </div>
+          <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Outro">
+          <label class="form-check-label" for="inlineRadio2">Outro</label>
+          </div>
+      </div>        
+  </div>
+
+  <br><br>
+<div class="row mb-4">
+  <div class="col">
+      <div class="form-outline">
+          Deseja serviços adcionais:<br>
+          <input type="Checkbox" name="texto01"> Recepção e segurança <br>
+          <input type="Checkbox" name="texto02"> Foto e filmagem <br>
+          <input type="Checkbox" name="texto02"> Cerveja <br>
+          <input type="Checkbox" name="texto02"> Bar/drinks <br>
+          <input type="Checkbox" name="texto02"> Cascata de chocolate <br>
+          <input type="Checkbox" name="texto02"> Totem <br>
+          <input type="Checkbox" name="texto02"> Espelho mágico <br>
+          <input type="Checkbox" name="texto02"> Pista led <br>
+          <input type="Checkbox" name="texto02"> Robô <br>
+          <input type="Checkbox" name="texto02"> Lanche da madrugada <br>
+          <input type="Checkbox" name="texto02"> Welcome drink (Coquetel) <br>
+          <input type="Checkbox" name="texto02"> Gerador <br>
       </div>
-      <div class="mb-3">
-      <label for="date" class="form-label">Data</label>
-      <input type="date" class="form-control" id="date" name="date">
-      </div>
-      <div class="mb-3">
-      <label for="quantidade" class="form-label">Número de Convidados</label>
-      <input type="text" class="form-control" id="quantidade" name="quantidade">
-      </div>
-        <br>
-    <button type="submit" class="btn btn-primary" value= "Cadastrar">Cadastrar</button>
-  </form>
+  </div>
+</div>
   <br>
+  <button type="submit" class="btn btn-primary" value= "Cadastrar">Cadastrar</button>
+</form>
+<br>
+</div>
+
 <!--fim formulário-->
+
     <!--Inicio Grid, cards que estão em 1 row e 4 col-->
     <br>
     <div class="row">
