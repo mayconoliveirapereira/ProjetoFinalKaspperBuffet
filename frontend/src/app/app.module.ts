@@ -8,13 +8,25 @@ import { AdduserComponent } from './components/adduser/adduser.component';
 import { UpdateuserComponent } from './components/updateuser/updateuser.component';
 import { ViewusersComponent } from './components/viewusers/viewusers.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HomeComponent } from './components/paginas/home/home.component';
+import { QuemsomosComponent } from './components/paginas/quemsomos/quemsomos.component';
+import { BlogComponent } from './components/paginas/blog/blog.component';
+import { EventosComponent } from './components/paginas/eventos/eventos.component';
+import { ServicosComponent } from './components/paginas/servicos/servicos.component';
+import { ContatoComponent } from './components/paginas/contato/contato.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AdduserComponent,
     UpdateuserComponent,
-    ViewusersComponent
+    ViewusersComponent,
+    HomeComponent,
+    QuemsomosComponent,
+    BlogComponent,
+    EventosComponent,
+    ServicosComponent,
+    ContatoComponent
   ],
   imports: [
     BrowserModule,

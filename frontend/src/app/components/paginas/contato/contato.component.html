@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+
+    <!--inicio navbar-->
+    <nav class="navbar col-12 position-fixed navbar-expand-lg bg-body-tertiary container-fluid" style="z-index: 999;">
+      <div class="#">
+        <a class="navbar-brand" href="#">
+          <img src="../fotos/LogoKaspper'sBuffet2.jpg" alt="Logo" width="auto" height="80px" class="d-inline-block align-text-top">
+        </a>
+      </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav container-fluid col-11 m-auto">
+              <li class="nav-item container">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item container">
+                <a class="nav-link active" aria-current="page" href="./quemSomos.html">Quem Somos</a>
+              </li>
+              <li class="nav-item container">
+                <a class="nav-link active" aria-current="page" href="./servicos.html">Serviços</a>
+              </li>
+              <li class="nav-item container">
+                <a class="nav-link active" aria-current="page" href="./eventos.html">Eventos</a>
+              </li>
+              <li class="nav-item container">
+                <a class="nav-link active" aria-current="page" href="./blog.html">Blog</a>
+              </li>
+              <li class="nav-item container">
+                <a class="nav-link active" aria-current="page" href="./contato.html">Contato</a>
+              </li>
+              <li class="nav-item container">
+                <a class="nav-link active" aria-current="page" href="./login.html">login</a>
+              </li>
+              
+            </ul>
+          </div>
+      </nav>
+<br>
+<br>
+<br>
+<br>
+    <!--fim navbar-->
+
+    <!--inicio formulário-->
+
+<div class="input-box" style="padding-left: 30px; padding-right: 30px;">
+  <div class="card-header py-3">
+      
+      <h5 class= "text-center"  style="color:black;">Solicitar Orçamento </h5>
+    </div>
+    <form method="post" class= "container-fluid">
+<!--Nome Completo-->
+
+  <div class="row mb-3">
+      <div class="col">
+          <div class="mb-3">
+          <label for="firstname" class="form-label">Nome</label>
+           <input type="text" class="form-control" id="firstname" placeholder="Digite seu Nome" required>
+           </div>
+      </div>
+  </div>
+
+<!-- Inicio Contatos e E-mail -->
+<div class="row mb-4">
+  <div class="col">
+    <div class="form-outline">
+      <label class="form-label" for="form7Example1">Celular</label>
+      <input type="tel" id="form7Example1" class="form-control" required placeholder="(xx) xxxxx-xxxx"/>       
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="form-outline">
+      <label class="form-label" for="form7Example2">E-mail</label>
+      <input type="email" id="form7Example2" class="form-control" required placeholder="Digite seu email" />                
+    </div>
+  </div>
+</div>
+<br>
+<!-- Final -->
+
+<!-- Informações do Evento -->
+<div class="row mb-4">
+  <div class="col">
+    <div class="form-outline">
+      <label class="form-label" for="form7Example1">Data do Evento</label>
+      <input type="date" id="form7Example1" class="form-control" required placeholder="DD/MM/AAAA"/>       
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="form-outline">
+      <label class="form-label" for="form7Example2">Quantidade de Convidados</label>
+      <input type="number" id="form7Example2" class="form-control" required placeholder="Quantidade" />                
+    </div>
+  </div>
+</div>
+<br>
+
+<div class="row mb-4">
+  <div class="col"> 
+      <div class="form-outline">    
+      Tipo de Evento: <br>
+      <select name="opcao">
+       <option value="opcao"> Opção </option>
+       <option value="casamento"> Casamento </option>
+       <option value="bodas"> Bodas </option>
+       <option value="aniversario"> Aniversário </option>
+       <option value="debutante"> Debudante (15 anos) </option>    
+       <option value="corporativo"> Corporativo </option>                  
+      </select>   
+      </div>      
+  </div><br>
+
+ 
+  <div class="col">
+      <div class="form-outline">
+          O Evento será realizado: <br>
+          <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Casa">
+          <label class="form-check-label" for="inlineRadio1">Casa</label>
+          </div>
+          <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Salao">
+          <label class="form-check-label" for="inlineRadio2">Salão de Festas</label>
+          </div>
+          <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Empresa">
+          <label class="form-check-label" for="inlineRadio2">Empresa</label>
+          </div>
+          <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Outro">
+          <label class="form-check-label" for="inlineRadio2">Outro</label>
+          </div>
+      </div>        
+  </div>
+
+  <br><br>
+<div class="row mb-4">
+  <div class="col">
+      <div class="form-outline">
+          Deseja serviços adcionais:<br>
+          <input type="Checkbox" name="texto01"> Recepção e segurança <br>
+          <input type="Checkbox" name="texto02"> Foto e filmagem <br>
+          <input type="Checkbox" name="texto02"> Cerveja <br>
+          <input type="Checkbox" name="texto02"> Bar/drinks <br>
+          <input type="Checkbox" name="texto02"> Cascata de chocolate <br>
+          <input type="Checkbox" name="texto02"> Totem <br>
+          <input type="Checkbox" name="texto02"> Espelho mágico <br>
+          <input type="Checkbox" name="texto02"> Pista led <br>
+          <input type="Checkbox" name="texto02"> Robô <br>
+          <input type="Checkbox" name="texto02"> Lanche da madrugada <br>
+          <input type="Checkbox" name="texto02"> Welcome drink (Coquetel) <br>
+          <input type="Checkbox" name="texto02"> Gerador <br>
+      </div>
+  </div>
+</div>
+  <br>
+  <button type="submit" class="btn btn-primary" value= "Cadastrar">Cadastrar</button>
+</div>
+</form>
+<br>
+</div>
+
+<!--fim formulário-->
+
+    <!--Inicio Grid, cards que estão em 1 row e 4 col-->
+    <br>
+    <div class="row">
+    <div class="col">
+      <h2 class="text-center">Contatos</h2>
+        <div class="m-auto text-center" >
+
+        <a href="http://www.whatsapp.com">
+        <i class="fa-brands fa-whatsapp" style="font-size: 75px; color: green;"></i></a>
+        
+        <a href="http://www.hotmail.com">
+        <i class="fa-regular fa-envelope" style="font-size: 75px; color: rgb(55, 56, 55);"></i></a>
+
+        <a href="http://www.facebook.com">
+        <i class="fa-brands fa-facebook" style="font-size: 75px; color: rgb(28, 6, 80);"></i></a>
+
+        <a href="https://www.instagram.com/">
+        <i class="fa-brands fa-instagram" style="font-size: 75px; color: rgb(173, 48, 39);"></i></a>
+
+        
+        <div class="col m-auto text-center"> 
+          <a href="https://www.google.com.br/maps">
+          <img src="../fotos/googlemaps.jpeg" width="300px" alt="..." class="rounded-5" alt="...">
+        </a></div>
+
+      </div>
+    </div>
+    </div>
+<br>
+
+    <!--inicio rodapé-->
+    <div class="row">
+      <div class="col text-center bg-light fw-bold">
+        <img src="../fotos/LogoKaspper'sBuffet2.jpg" alt="Logo" width="auto" height="80px" class="d-inline-block align-text-top">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center bg-light fw-bold">Copyright-2023</div>
+    </div>
+
+<!--fim rodapé-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </body>
+</html>

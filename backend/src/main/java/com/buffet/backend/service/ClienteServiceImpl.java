@@ -42,7 +42,9 @@ public class ClienteServiceImpl implements ClienteService{
 		 cliente1.setEmail(cliente.getEmail());
 		 cliente1.setpNo(cliente.getpNo());
 		 cliente1.setAddress(cliente.getAddress());
-		 
+		 cliente1.setTipoEvento(cliente.getTipoEvento());
+		 cliente1.setDataEvento(cliente.getDataEvento());
+		 cliente1.setQtdConvidados(cliente.getQtdConvidados());
 		 
 		 return clienteRepository.save(cliente1);
 	}

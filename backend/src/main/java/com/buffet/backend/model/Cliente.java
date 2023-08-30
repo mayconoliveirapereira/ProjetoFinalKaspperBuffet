@@ -1,5 +1,7 @@
 package com.buffet.backend.model;
 
+import java.time.LocalDate;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,6 +19,10 @@ public class Cliente {
 	private String email;
 	private String pNo; //phone Number
 	private String address;
+	private String tipoEvento;
+	private LocalDate dataEvento;
+	private Integer qtdConvidados;
+
 	
 	
 	public long getId() {
@@ -49,9 +55,19 @@ public class Cliente {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	
-	
-	
-	
-	
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public String getTipoEvento() {
+		return tipoEvento;
+	}
+	public void setTipoEvento(String tipoEvento) {this.tipoEvento = tipoEvento;}
+	public LocalDate getDataEvento() {return dataEvento;}
+	public void setDataEvento(LocalDate dataEvento) {this.dataEvento = dataEvento;}
+	public Integer getQtdConvidados() {return qtdConvidados;}
+	public void setQtdConvidados(Integer qtdConvidados) {this.qtdConvidados = qtdConvidados;}
 }
+	
+	
+	
+
