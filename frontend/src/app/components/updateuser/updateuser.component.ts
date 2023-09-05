@@ -26,6 +26,7 @@ export class UpdateuserComponent implements OnInit {
   }
 
   form = new FormGroup({
+    name: new FormControl('', [Validators.required]),
     email: new FormControl('', [Validators.required]),
     pNo: new FormControl('', [Validators.required]),
     address: new FormControl('', [Validators.required])

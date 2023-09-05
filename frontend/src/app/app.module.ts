@@ -14,6 +14,12 @@ import { BlogComponent } from './components/paginas/blog/blog.component';
 import { EventosComponent } from './components/paginas/eventos/eventos.component';
 import { ServicosComponent } from './components/paginas/servicos/servicos.component';
 import { ContatoComponent } from './components/paginas/contato/contato.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
+import { CasamentosebodasComponent } from './components/dropdown/casamentosebodas/casamentosebodas.component';
+import { AniversariosComponent } from './components/dropdown/aniversarios/aniversarios.component';
+import { CorporativosComponent } from './components/dropdown/corporativos/corporativos.component';
+import { LoginComponent } from './components/paginas/login/login.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +32,13 @@ import { ContatoComponent } from './components/paginas/contato/contato.component
     BlogComponent,
     EventosComponent,
     ServicosComponent,
-    ContatoComponent
+    ContatoComponent,
+    FooterComponent,
+    HeaderComponent,
+    CasamentosebodasComponent,
+    AniversariosComponent,
+    CorporativosComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

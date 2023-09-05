@@ -5,4 +5,7 @@ export interface User{
     email: string
     pNo: string
     address: string
+    tipoEvento: string
+    dataEvento: number
+    qtdConvidados: number
 }

@@ -8,45 +8,25 @@
 </head>
 <body>
 
-    <!--inicio navbar-->
-    <nav class="navbar col-12 position-fixed navbar-expand-lg bg-body-tertiary container-fluid" style="z-index: 999;">
-      <div class="#">
-        <a class="navbar-brand" href="#">
-          <img src="../fotos/LogoKaspper'sBuffet2.jpg" alt="Logo" width="auto" height="80px" class="d-inline-block align-text-top">
-        </a>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/add">Add User</a>
+          </li>
+        </ul>
       </div>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav container-fluid col-11 m-auto">
-              <li class="nav-item container">
-                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item container">
-                <a class="nav-link active" aria-current="page" href="./quemSomos.html">Quem Somos</a>
-              </li>
-              <li class="nav-item container">
-                <a class="nav-link active" aria-current="page" href="./servicos.html">Serviços</a>
-              </li>
-              <li class="nav-item container">
-                <a class="nav-link active" aria-current="page" href="./eventos.html">Eventos</a>
-              </li>
-              <li class="nav-item container">
-                <a class="nav-link active" aria-current="page" href="./blog.html">Blog</a>
-              </li>
-              <li class="nav-item container">
-                <a class="nav-link active" aria-current="page" href="./contato.html">Contato</a>
-              </li>
-              <li class="nav-item container">
-                <a class="nav-link active" aria-current="page" href="./login.html">login</a>
-              </li>
-              
-            </ul>
-          </div>
-      </nav>
-<br>
-<br>
-<br>
-<br>
-    <!--fim navbar-->
+    </div>
+  </nav>
+
 
     <!--inicio formulário-->
 
@@ -61,32 +41,41 @@
   <div class="row mb-3">
       <div class="col">
           <div class="mb-3">
-          <label for="firstname" class="form-label">Nome</label>
-           <input type="text" class="form-control" id="firstname" placeholder="Digite seu Nome" required>
+          <label for="name" class="form-label">Nome</label>
+           <input id="firstname" formControlName="name" type="text" name="name" class="form-control" placeholder="Digite aqui" required>
            </div>
       </div>
   </div>
-
+<br>
 <!-- Inicio Contatos e E-mail -->
 <div class="row mb-4">
   <div class="col">
     <div class="form-outline">
-      <label class="form-label" for="form7Example1">Celular</label>
-      <input type="tel" id="form7Example1" class="form-control" required placeholder="(xx) xxxxx-xxxx"/>       
-    </div>
+      <label for="email" class="form-label">Email</label>
+    <input id="email" type="email"  formControlName="email" name="email" class="form-control" placeholder="Digite aqui" required>
   </div>
-
+  </div>
+<br>
   <div class="col">
     <div class="form-outline">
-      <label class="form-label" for="form7Example2">E-mail</label>
-      <input type="email" id="form7Example2" class="form-control" required placeholder="Digite seu email" />                
-    </div>
+      <label for="pNo" class="form-label">Contato</label>
+    <input id="pNo" type="text" name="pNo"  formControlName="pNo" class="form-control" placeholder="Digite aqui" required>
+  </div>
   </div>
 </div>
 <br>
+
 <!-- Final -->
 
 <!-- Informações do Evento -->
+
+<div class="col">
+  <div class="form-outline">
+      <label for="Address" class="form-label">Cidade/Estado</label>
+      <textarea id="Address" type="text" name="address"  formControlName="address" class="form-control" placeholder="Digite aqui" rows="3" required></textarea>
+    </div>
+  </div>
+<br>
 <div class="row mb-4">
   <div class="col">
     <div class="form-outline">
@@ -94,88 +83,49 @@
       <input type="date" id="form7Example1" class="form-control" required placeholder="DD/MM/AAAA"/>       
     </div>
   </div>
-
+<br>
   <div class="col">
     <div class="form-outline">
       <label class="form-label" for="form7Example2">Quantidade de Convidados</label>
-      <input type="number" id="form7Example2" class="form-control" required placeholder="Quantidade" />                
+      <input id="qtdConvidados" type="number" name="qtdConvidados"  formControlName="qtdConvidados" class="form-control" placeholder="Digite aqui" required>
     </div>
   </div>
 </div>
 <br>
-
-<div class="row mb-4">
-  <div class="col"> 
-      <div class="form-outline">    
-      Tipo de Evento: <br>
-      <select name="opcao">
-       <option value="opcao"> Opção </option>
-       <option value="casamento"> Casamento </option>
-       <option value="bodas"> Bodas </option>
-       <option value="aniversario"> Aniversário </option>
-       <option value="debutante"> Debudante (15 anos) </option>    
-       <option value="corporativo"> Corporativo </option>                  
-      </select>   
-      </div>      
-  </div><br>
-
- 
   <div class="col">
-      <div class="form-outline">
-          O Evento será realizado: <br>
-          <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Casa">
-          <label class="form-check-label" for="inlineRadio1">Casa</label>
-          </div>
-          <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Salao">
-          <label class="form-check-label" for="inlineRadio2">Salão de Festas</label>
-          </div>
-          <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Empresa">
-          <label class="form-check-label" for="inlineRadio2">Empresa</label>
-          </div>
-          <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Outro">
-          <label class="form-check-label" for="inlineRadio2">Outro</label>
-          </div>
-      </div>        
+      <div class="mb-3">
+      <label for="tipoEvento" class="form-label">Tipo de Evento</label>
+       <input id="tipoEvento" formControlName="tipoEvento" type="text" name="tipoEvento" class="form-control" placeholder="Casamento / Aniversário / Formatura / Outro" required>
+       </div>
   </div>
+<br>
 
-  <br><br>
-<div class="row mb-4">
-  <div class="col">
-      <div class="form-outline">
-          Deseja serviços adcionais:<br>
-          <input type="Checkbox" name="texto01"> Recepção e segurança <br>
-          <input type="Checkbox" name="texto02"> Foto e filmagem <br>
-          <input type="Checkbox" name="texto02"> Cerveja <br>
-          <input type="Checkbox" name="texto02"> Bar/drinks <br>
-          <input type="Checkbox" name="texto02"> Cascata de chocolate <br>
-          <input type="Checkbox" name="texto02"> Totem <br>
-          <input type="Checkbox" name="texto02"> Espelho mágico <br>
-          <input type="Checkbox" name="texto02"> Pista led <br>
-          <input type="Checkbox" name="texto02"> Robô <br>
-          <input type="Checkbox" name="texto02"> Lanche da madrugada <br>
-          <input type="Checkbox" name="texto02"> Welcome drink (Coquetel) <br>
-          <input type="Checkbox" name="texto02"> Gerador <br>
-      </div>
-  </div>
+Detalhes Adicionais
+<div class="form-floating">
+  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+  <label for="floatingTextarea2">Digite aqui as opções abaixo desejadas</label>
 </div>
+<br>
+
+<h5>O evento será realizado em:</h5>
+<p>Salão de festas     /    Empresa    /    Casa     /    Outros    </p>
+
+<h5>Adicionais</h5>
+<p> Recepção e segurança / Foto e filmagem / Cerveja / Bar/drinks / Cascata de chocolate / Totem </p>
+<p> Espelho mágico / Pista led / Robô / Lanche da madrugada / Welcome drink (Coquetel) / Gerador</p>
+       
   <br>
   <button type="submit" class="btn btn-primary" value= "Cadastrar">Cadastrar</button>
-</div>
-</form>
 <br>
-</div>
-
+</form>
 <!--fim formulário-->
+
 
     <!--Inicio Grid, cards que estão em 1 row e 4 col-->
     <br>
     <div class="row">
     <div class="col">
-      <h2 class="text-center">Contatos</h2>
+      <h2 class="text-center">Siga nossas Páginas</h2>
         <div class="m-auto text-center" >
 
         <a href="http://www.whatsapp.com">
@@ -193,28 +143,19 @@
         
         <div class="col m-auto text-center"> 
           <a href="https://www.google.com.br/maps">
-          <img src="../fotos/googlemaps.jpeg" width="300px" alt="..." class="rounded-5" alt="...">
+          <img src="/assets/fotos/googlemaps.jpeg" width="300px" alt="..." class="rounded-5" alt="...">
         </a></div>
 
       </div>
     </div>
     </div>
+</div>
 <br>
 
-    <!--inicio rodapé-->
-    <div class="row">
-      <div class="col text-center bg-light fw-bold">
-        <img src="../fotos/LogoKaspper'sBuffet2.jpg" alt="Logo" width="auto" height="80px" class="d-inline-block align-text-top">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col text-center bg-light fw-bold">Copyright-2023</div>
-    </div>
-
-<!--fim rodapé-->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
   </body>
 </html>
