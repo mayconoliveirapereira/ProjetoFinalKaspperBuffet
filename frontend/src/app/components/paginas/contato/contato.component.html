@@ -8,41 +8,22 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/add">Add User</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-
     <!--inicio formulário-->
-
+  
 <div class="input-box" style="padding-left: 30px; padding-right: 30px;">
   <div class="card-header py-3">
       
       <h5 class= "text-center"  style="color:black;">Solicitar Orçamento </h5>
     </div>
-    <form method="post" class= "container-fluid">
+    <form [formGroup]="form" (ngSubmit)="submit()">
+      
 <!--Nome Completo-->
 
   <div class="row mb-3">
       <div class="col">
           <div class="mb-3">
           <label for="name" class="form-label">Nome</label>
-           <input id="firstname" formControlName="name" type="text" name="name" class="form-control" placeholder="Digite aqui" required>
+           <input id="name" formControlName="name" type="text" name="name" class="form-control" placeholder="Digite aqui" required>
            </div>
       </div>
   </div>
@@ -80,7 +61,7 @@
   <div class="col">
     <div class="form-outline">
       <label class="form-label" for="form7Example1">Data do Evento</label>
-      <input type="date" id="form7Example1" class="form-control" required placeholder="DD/MM/AAAA"/>       
+      <input type="date" id="dataEvento" name="dataEventos" class="form-control" placeholder="DD/MM/AAAA" required/>       
     </div>
   </div>
 <br>
@@ -114,9 +95,13 @@ Detalhes Adicionais
 <p> Recepção e segurança / Foto e filmagem / Cerveja / Bar/drinks / Cascata de chocolate / Totem </p>
 <p> Espelho mágico / Pista led / Robô / Lanche da madrugada / Welcome drink (Coquetel) / Gerador</p>
        
-  <br>
-  <button type="submit" class="btn btn-primary" value= "Cadastrar">Cadastrar</button>
-<br>
+
+
+<div class="row">
+  <div class="col-md-1 form-group">
+    <input [disabled]="!form.valid" class="btn btn-primary w-100" type="submit" value="Enviar">
+  </div>
+</div>
 </form>
 <!--fim formulário-->
 
@@ -129,21 +114,21 @@ Detalhes Adicionais
         <div class="m-auto text-center" >
 
         <a href="http://www.whatsapp.com">
-        <i class="fa-brands fa-whatsapp" style="font-size: 75px; color: green;"></i></a>
+        <i class="fa-brands fa-whatsapp" style="font-size: 60px; color: green;"></i></a>
         
         <a href="http://www.hotmail.com">
-        <i class="fa-regular fa-envelope" style="font-size: 75px; color: rgb(55, 56, 55);"></i></a>
+        <i class="fa-regular fa-envelope" style="font-size: 60px; color: rgb(55, 56, 55);"></i></a>
 
         <a href="http://www.facebook.com">
-        <i class="fa-brands fa-facebook" style="font-size: 75px; color: rgb(28, 6, 80);"></i></a>
+        <i class="fa-brands fa-facebook" style="font-size: 60px; color: rgb(28, 6, 80);"></i></a>
 
         <a href="https://www.instagram.com/">
-        <i class="fa-brands fa-instagram" style="font-size: 75px; color: rgb(173, 48, 39);"></i></a>
+        <i class="fa-brands fa-instagram" style="font-size: 60px; color: rgb(173, 48, 39);"></i></a>
 
         
         <div class="col m-auto text-center"> 
           <a href="https://www.google.com.br/maps">
-          <img src="/assets/fotos/googlemaps.jpeg" width="300px" alt="..." class="rounded-5" alt="...">
+          <img src="/assets/fotos/googlemaps.jpeg" width="250px" alt="..." class="rounded-5" alt="...">
         </a></div>
 
       </div>

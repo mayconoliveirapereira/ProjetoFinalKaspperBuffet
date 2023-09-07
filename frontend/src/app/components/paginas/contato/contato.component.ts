@@ -1,4 +1,5 @@
-import { Component, OnInit  } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AppService } from 'src/app/app.service';
 
@@ -8,33 +9,27 @@ import { AppService } from 'src/app/app.service';
   styleUrls: ['./contato.component.css']
 })
 export class ContatoComponent implements OnInit{
-
-  users: any[] | undefined
-  url: string = "http://localhost:8080/";
-
-  constructor(private service: AppService, private router: Router) { 
-   
-  }
-
-  ngOnInit(): void {
-    this.service.getUsers().subscribe(data => {
-      this.users = data;
-    })
-  }
-
-  deleteUser(id: number){
-    this.service.deleteUser(id).subscribe(data => {
-      this.users = this.users?.filter(user => user.id !== id);
-    })
-    
-      setTimeout(()=>{
-        window.location.reload();
-      }, 100);
+  constructor(private service: AppService, private router: Router) { }
+  data: any
   
+  form = new FormGroup({
+    name: new FormControl('', [Validators.required]),
+    email: new FormControl('', [Validators.required]),
+    pNo: new FormControl('', [Validators.required]),
+    address: new FormControl('', [Validators.required]),
+    tipoEvento: new FormControl('', [Validators.required]),
+    dataEvento: new FormControl('', [Validators.required]),
+    qtdConvidados: new FormControl('', [Validators.required])
+  })
+  ngOnInit(): void {
   }
+  submit(){
+    this.data = this.form.value
+    console.log(this.data)
 
-  updateUser(id: number){
-    this.router.navigate(['update', id]);
+    this.service.addcliente(this.data).subscribe(data => {
+      console.log(data)
+    })
+    this.router.navigate(['/']);
   }
-
 }
