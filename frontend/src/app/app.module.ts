@@ -20,6 +20,8 @@ import { CasamentosebodasComponent } from './components/dropdown/casamentoseboda
 import { AniversariosComponent } from './components/dropdown/aniversarios/aniversarios.component';
 import { CorporativosComponent } from './components/dropdown/corporativos/corporativos.component';
 import { LoginComponent } from './components/paginas/login/login.component';
+import { DatePipe } from '@angular/common';
+
 
 @NgModule({
   declarations: [
@@ -46,7 +48,7 @@ import { LoginComponent } from './components/paginas/login/login.component';
     HttpClientModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

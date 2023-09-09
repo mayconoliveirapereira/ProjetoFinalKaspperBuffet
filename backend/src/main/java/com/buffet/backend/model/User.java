@@ -2,6 +2,8 @@ package com.buffet.backend.model;
 
 import java.time.LocalDate;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -20,7 +22,8 @@ public class User {
 	private String pNo; //phone Number
 	private String address;
 	private String tipoEvento;
-	private LocalDate dataEvento;
+	@JsonFormat(pattern = "dd/MM/yyyy")
+    private LocalDate dataEvento;
 	private Integer qtdConvidados;
 	
 	
