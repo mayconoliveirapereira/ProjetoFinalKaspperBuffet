@@ -27,9 +27,9 @@ export class ContatoComponent implements OnInit{
     this.data = this.form.value
     console.log(this.data)
 
-    this.service.addcliente(this.data).subscribe(data => {
+    this.service.adduser(this.data).subscribe(data => {
       console.log(data)
     })
-    this.router.navigate(['/']);
+    this.router.navigate(['contato']);
   }
 }

@@ -16,7 +16,10 @@ export class AdduserComponent implements OnInit {
     name: new FormControl('', [Validators.required]),
     email: new FormControl('', [Validators.required]),
     pNo: new FormControl('', [Validators.required]),
-    address: new FormControl('', [Validators.required])
+    address: new FormControl('', [Validators.required]),
+    tipoEvento: new FormControl('', [Validators.required]),
+    dataEvento: new FormControl('', [Validators.required]),
+    qtdConvidados: new FormControl('', [Validators.required])
   })
   ngOnInit(): void {
   }
@@ -27,7 +30,7 @@ export class AdduserComponent implements OnInit {
     this.service.adduser(this.data).subscribe(data => {
       console.log(data)
     })
-    this.router.navigate(['/']);
+    this.router.navigate(['contato']);
   }
 }
 

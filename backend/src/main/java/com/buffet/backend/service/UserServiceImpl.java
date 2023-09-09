@@ -42,6 +42,9 @@ public class UserServiceImpl implements UserService{
 		 user1.setEmail(user.getEmail());
 		 user1.setpNo(user.getpNo());
 		 user1.setAddress(user.getAddress());
+		 user1.setTipoEvento(user.getTipoEvento());
+		 user1.setDataEvento(user.getDataEvento());
+		 user1.setQtdConvidados(user.getQtdConvidados());
 		 
 		 
 		 return userRepository.save(user1);

@@ -33,7 +33,7 @@ public class ClienteController {
 	@PostMapping("/addcliente")
 	public Cliente createCliente(@RequestBody Cliente cliente) {
 		Cliente cliente1 = clienteService.createCliente(cliente);
-		return cliente;
+		return cliente1;
 	}
 	
 	//Read(listar)

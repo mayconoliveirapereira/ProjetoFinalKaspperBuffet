@@ -22,6 +22,7 @@ public class Cliente {
 	private String tipoEvento;
 	private LocalDate dataEvento;
 	private Integer qtdConvidados;
+	
 
 	
 	

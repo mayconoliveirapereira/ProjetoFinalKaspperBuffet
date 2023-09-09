@@ -1,3 +1,5 @@
+import { DatePipe } from "@angular/common"
+
 export interface User{
 
     id: number
@@ -6,6 +8,6 @@ export interface User{
     pNo: string
     address: string
     tipoEvento: string
-    dataEvento: number
+    dataEvento: Date
     qtdConvidados: number
 }

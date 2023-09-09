@@ -7,23 +7,9 @@
     <title>Add User</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
     
+
+ 
     <!--Main Content-->
     <div class="my-5">
       <div class="mx-auto w-25 " style="max-width:100%;">
@@ -61,18 +47,42 @@
               <textarea id="Address" type="text" name="address"  formControlName="address" class="form-control" placeholder="New Delhi, India" rows="3" required></textarea>
             </div>
           </div>
+
+          <!---->
+          <div class="row mb-4">
+            <div class="col">
+              <div class="form-outline">
+                <label class="form-label" for="form7Example1">Data do Evento</label>
+                <input type="date" id="dataEvento" name="dataEventos" class="form-control" placeholder="DD/MM/AAAA" required/>       
+              </div>
+            </div>
+          <br>
+            <div class="col">
+              <div class="form-outline">
+                <label class="form-label" for="form7Example2">Quantidade de Convidados</label>
+                <input id="qtdConvidados" type="number" name="qtdConvidados"  formControlName="qtdConvidados" class="form-control" placeholder="Digite aqui" required>
+              </div>
+            </div>
+          </div>
+          <br>
+            <div class="col">
+                <div class="mb-3">
+                <label for="tipoEvento" class="form-label">Tipo de Evento</label>
+                 <input id="tipoEvento" formControlName="tipoEvento" type="text" name="tipoEvento" class="form-control" placeholder="Casamento / Aniversário / Formatura / Outro" required>
+                 </div>
+            </div>
+          <br>
+          <!---->
          
           <div class="row">
             <div class="col-md-12 form-group">
-              <input [disabled]="!form.valid" class="btn btn-primary w-100" type="submit" value="Submit">
+              <input [disabled]="form.valid" class="btn btn-primary w-100" type="submit" value="Submit">
             </div>
           </div>
-
-          <div>
-            
-          </div>
+          
         </form>
       </div>
     </div>
+  
 </body>
 </html>
