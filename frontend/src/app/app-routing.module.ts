@@ -13,6 +13,7 @@ import { LoginComponent } from './components/paginas/login/login.component';
 import { CasamentosebodasComponent } from './components/dropdown/casamentosebodas/casamentosebodas.component';
 import { AniversariosComponent } from './components/dropdown/aniversarios/aniversarios.component';
 import { CorporativosComponent } from './components/dropdown/corporativos/corporativos.component';
+import { TabelaComponent } from './components/paginalogada/tabela/tabela.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -28,6 +29,7 @@ const routes: Routes = [
   { path: 'casamentosebodas', component: CasamentosebodasComponent},
   { path: 'aniversarios', component: AniversariosComponent},
   { path: 'corporativos', component: CorporativosComponent},
+  { path: 'tabela', component: TabelaComponent},
 ];
 
 @NgModule({

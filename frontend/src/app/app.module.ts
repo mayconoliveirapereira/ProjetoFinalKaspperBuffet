@@ -21,6 +21,7 @@ import { AniversariosComponent } from './components/dropdown/aniversarios/aniver
 import { CorporativosComponent } from './components/dropdown/corporativos/corporativos.component';
 import { LoginComponent } from './components/paginas/login/login.component';
 import { DatePipe } from '@angular/common';
+import { TabelaComponent } from './components/paginalogada/tabela/tabela.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { DatePipe } from '@angular/common';
     AniversariosComponent,
     CorporativosComponent,
     LoginComponent,
+    TabelaComponent,
   ],
   imports: [
     BrowserModule,
